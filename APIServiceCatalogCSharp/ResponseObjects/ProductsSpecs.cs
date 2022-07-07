@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace APIServiceCatalogCSharp.ResponseObjects
 {
-    class ProductsSpecs
+   public class ProductsSpecs
     {
         public int totalCategoryCounts { get; set; }
         public int totalProductCounts { get; set; }

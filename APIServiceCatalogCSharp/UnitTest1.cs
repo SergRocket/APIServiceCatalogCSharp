@@ -12,8 +12,6 @@ namespace APIServiceCatalogCSharp
     [TestFixture]
     public class UnitTest1
     {
-        
-
         [Test]
         public void TestMethodProductData()
         {
@@ -40,7 +38,7 @@ namespace APIServiceCatalogCSharp
             var deserialize = new JsonDeserializer();
             var response = client.Execute(request);
             var results = deserialize.Deserialize<Dictionary<string, string>>(response);
-            var resourceList = results["matadata.tilte"];
+            var resourceList = results["resourceList"];
             Assert.That(resourceList, Is.EqualTo("Wreathed in Joy Holiday Card"), "Data are invalid");
         }
 

@@ -24,7 +24,6 @@ namespace APIServiceCatalogCSharp.Steps
         [Given(@"Perform POST operation for given endpoint")]
         public void GivenPerformPOSTOperationForGivenEndpoint(string basePath)
         {
-            _settings.RestClient.BaseUrl = new Uri("https://api2.beta.shutterfly.com");
             _settings.Request = new RestSharp.RestRequest(basePath, RestSharp.Method.POST);
         }
 
